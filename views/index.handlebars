@@ -4,6 +4,7 @@
   <head>
     <title>My HCI Friends</title>	
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/hci-friends.js"></script>
@@ -19,7 +20,7 @@
       {{#each data.friends}}
         <div class="friend">
           <img class="img-responsive img-rounded" src="{{imageURL}}"/>
-          <h3>{{name}}</h3>
+          <a href="#"><h3>{{name}}</h3></a>
           {{description}}
           <hr>
         </div>
